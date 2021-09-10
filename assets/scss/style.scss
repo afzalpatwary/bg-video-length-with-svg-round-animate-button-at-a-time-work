@@ -1,0 +1,80 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Project Name
+ * @author      - 
+ * @created_by  - kawsar bin siraj
+ * @created_at  - 
+ * @modified_by -
+ */
+
+/* fonts import */
+@import url("https://cdn.jsdelivr.net/gh/mortezaom/google-sans-cdn@master/fonts.css");
+// font-family: "Google Sans";
+/* fonts import -END */
+
+/* reset, root */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	font-family: "Google Sans";
+}
+
+:root {
+	--clr-blue: #0bb8e7;
+	--clr-blue-dark: #106196;
+	--clr-pink: #ff7282;
+}
+/* reset, root - END */
+
+
+
+
+/* css for banner */
+.banner {
+	.banner-overlay {
+		background-color: rgba(0, 43, 70, 0.8);
+
+		&.banner-overlay-light {
+			background-color: rgba(0, 43, 70, 0.5);
+		}
+
+		.banner-title {
+			font-size: 72px;
+			font-weight: 700;
+			line-height: calc(100% + 15px);
+		}
+		.banner-sub-title {
+			font-size: 20px;
+			font-weight: 300;
+			line-height: calc(100% + 10px);
+		}
+
+		.btn {
+			font-size: 15px;
+		}
+	}
+}
+
+.videoLength {
+	width: 106px;
+	height: 106px;
+	margin: auto;
+	cursor: pointer;
+
+	svg.round {
+		transform: rotate(-90deg);
+		fill: none;
+		stroke-width: 2;
+		stroke-linecap: round;
+		stroke-dasharray: 0 999;
+	}
+}
+
+/* css for banner - END */
